@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            color: #333; 
+            color: #333;
+            line-height: 1.6;
+            background-color: #fafafa;
+        }
+        a { color: #2c3e50; text-decoration: none; border-bottom: 1px solid #ddd; transition: 0.2s; }
+        a:hover { color: #0056b3; border-bottom-color: #0056b3; }
+
+        
+        .container { 
+            max-width: 900px; 
+            margin: 40px auto; 
+            padding: 40px; 
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            display: flex; 
+            gap: 50px; 
+        }
+
+        .sidebar { flex: 0 0 220px; font-size: 14px; }
+        .profile-photo { 
+            width: 150px; 
+            height: 150px; 
+            background-color: #eee; 
+            border-radius: 50%; 
+            margin-bottom: 20px; 
+            overflow: hidden; 
+            border: 3px solid #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .profile-photo img { width: 100%; height: 100%; object-fit: cover; }
+        
+        .sidebar h1 { font-size: 22px; margin-bottom: 5px; color: #000; }
+        .sidebar .status { color: #666; margin-bottom: 25px; font-style: italic; }
+        
+        .contact-list { list-style: none; }
+        .contact-list li { margin-bottom: 10px; display: flex; align-items: center; gap: 10px; color: #555; }
+        .contact-list i { width: 20px; text-align: center; color: #777; }
+
+
+        .content { flex: 1; }
+        
+        h2 { 
+            font-size: 18px; 
+            text-transform: uppercase; 
+            letter-spacing: 1px; 
+            color: #888; 
+            border-bottom: 1px solid #eee; 
+            padding-bottom: 5px; 
+            margin: 30px 0 15px 0; 
+        }
+        h2:first-child { margin-top: 0; }
+
+        p { margin-bottom: 15px; }
+
+        .item { margin-bottom: 20px; }
+        .item-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px; }
+        .item-title { font-weight: bold; font-size: 16px; color: #222; }
+        .item-date { font-size: 12px; color: #999; }
+        .item-desc { font-size: 14px; color: #555; }
+
+        .skills { display: flex; flex-wrap: wrap; gap: 8px; }
+        .tag { 
+            background: #f4f4f4; 
+            padding: 4px 10px; 
+            border-radius: 4px; 
+            font-size: 13px; 
+            color: #444; 
+            border: 1px solid #e0e0e0;
+        }
+
+
+        @media (max-width: 700px) {
+            .container { flex-direction: column; padding: 20px; }
+            .sidebar { text-align: center; border-bottom: 1px solid #eee; padding-bottom: 20px; margin-bottom: 20px;}
+            .profile-photo { margin: 0 auto 20px auto; }
+            .contact-list li { justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <aside class="sidebar">
+            <div class="profile-photo">
+                <img src="C:\Users\stani\Desktop\CV\photo_2025-12-13_19-43-56.jpg" alt="">
+            </div>
+            
+            <h1>Stanislav Ferents</h1>
+            <div class="status">Student TUKE<br>Počítačová podpora výrobných technológií</div>
+
+            <ul class="contact-list">
+                <li><i class="fas fa-map-marker-alt"></i> Prešov</li>
+                <li><i class="fas fa-university"></i> TUKE lokated in Prešov</li>
+                <li><i class="fas fa-envelope"></i> <a href="mailto:stanislav.ferents@gmail.com"> stanislav.ferents@gmail.com</a></li>
+                <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/stanislav-ferents-6017b4247/">LinkedIn</a></li>
+                <li><i class="fas fa-file-pdf"></i> <a href="C:\Users\stani\Desktop\CV\CV_Ferents_ENG.docx" download>CV</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            
+            <h2>About me</h2>
+            <p>
+                I am a first-year student specializing in computer modeling.
+I am interested in database automation and programming languages (Python, HTML, CSS, C++, MATLAB).
+            </p>
+            <p>
+                I am looking for an internship or job opportunity where I can apply my skills in Excel, MATLAB, and knowledge.
+            </p>
+
+            <h2>Education</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Faculty of Manufacturing Technologies TUKE</span>
+                    <span class="item-date">2025 - 2028   (in process)</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Lviv Physics and Mathematics Lyceum</span>
+                    <span class="item-date">2022 - 2025</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Novyi Rozdil Secondary School No. 4 </span>
+                    <span class="item-date">2014 - 2022</span>
+                </div>
+            </div>
+
+            <h2>Summer job</h2>
+            
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title"><a href="https://world-of-spices.com.ua/">Website World-of-spices</a></span>
+                    <span class="item-date">Summer 2024</span>
+                </div>
+                <div class="item-desc">
+                    I created the website and database for it
+                </div>
+            </div>
+
+            
+            
+
+            <h2>skills</h2>
+            <div class="skills">
+                <span class="tag">Frontend</span>
+                <span class="tag">Computer modeling (NX)</span>
+                <span class="tag">MS Excel </span>
+                <span class="tag">MATLAB</span>
+                <span class="tag">Communication</span>
+		<span class="tag">artificial intelligence</span>
+            </div>
+
+            <h2>languages</h2>
+            <div class="skills">
+                <span class="tag">Ukraine (fluent)</span>
+                <span class="tag">English (B2, I am currently studying  improvement course at the University of Gothenburg, Sweden)</span>
+                <span class="tag">Slovak(A2,in the process of learning)</span>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
